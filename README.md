@@ -27,7 +27,7 @@ the get() method for dictionaries and specifying default values. It also handles
 * **Sort**:
 The program sorts the movies available in the database (the movies by a genre specified by the user, otherwise all the movies available) in ascending or descending order (as specified by  the user) by rating score. (the program filters out the movies that have no rating score available and does not include them in the list)
 
-The command typed in the terminal by the user is validated: the length of the command has to be valid, the sorting is case-insensitive and ignores any trailing and leading whitespaces, the sorting can only be ascending or descending and the movie genre type has to be valid movie genre. (at least a single movie of that genre exists in the database)
+The command typed in the terminal by the user is validated: the length of the command has to be valid, the sorting is case-insensitive and ignores any trailing and leading whitespaces, the sorting can only be ascending or descending and the movie genre type has to be a valid movie genre. (at least a single movie of that genre exists in the database)
 
 The final output is saved in a csv file (sorted_movies.csv) to ensure persistent storage and a clear format. (each movie and its rating score is represented on a single line)
 
@@ -40,15 +40,15 @@ The program also uses the standard library random in order to randomize the colo
 
 The backend of matplotlib is set to Agg in order to display the plot in a file and not in an interactive window.
 
-The bar chart is then saved in a png file (plot.png) and a message is displayed to the user to ensure the program is user-friendly and easy to user:
+The bar chart is then saved in a png file (plot.png) and a message is displayed to the user to ensure the program is user-friendly:
 >"Plot saved as 'plot.png'"
 
 ![Bar Chart Plot](images/plot.png "Genre-Average Rating Plot")
 
 #### Files:
-The project.py contains the main code of the project written in Python.
-The test_project.py contains unit tests for five functions from the project.py file.
-The requirements.txt lists the third party packages used in the project.
+The project.py file contains the main code of the project written in Python.
+The test_project.py file contains unit tests for five functions from the project.py file.
+The requirements.txt file lists the third party packages used in the project.
 
 #### Libraries:
 The programming language used for the project is Python. Both standard Python libraries and third-party libraries were used.
